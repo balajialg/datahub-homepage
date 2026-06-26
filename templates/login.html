@@ -15,7 +15,7 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
     alt='University of California, Berkeley logo' id='berkeley-logo' title='UC Berkeley logo' />
   </a>
   <div id="operated-by">
-    Operated by the <a href="https://data.berkeley.edu/">Division of Computing, Data Science, and Society</a>
+    Operated by <a href="https://rtl.berkeley.edu">Research, Teaching and Learning</a> and <a href="https://data.berkeley.edu/">College of Computing, Data Science, and Society</a>
   </div>
 </div>
 <div class="login-container text-center">
@@ -60,13 +60,6 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
       Welcome to the University of California, Berkeley
       <strong>DataHub</strong>.
     </big>
-    <br />
-    <br />
-    <!-- A proof of concept service, developed as a partnership between
-      the <a href="https://cio.utoronto.ca/">Office of the CIO</a> (Information
-      Technology Services), the Faculty of Arts & Science’s new Computational
-      and Data Science Education initiative, the <a href="https://2i2c.org">2i2c
-      Consortium</a>, and Microsoft Canada. -->
   </div>
   <div class="col-md-6 details-logos">
     <div class="pull-right">
@@ -86,115 +79,67 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
 
 <div class="col-md-8 col-md-offset-2 questions">
   <div>
-    <h4>What is a Jupyter Notebook?</h4>
-
-    <a href="https://jupyter.org">Jupyter Notebook</a> is an open-source web
-    application that allows you to create and share documents that contain live
-    code, equations, visualizations and narrative text. Uses include: data
-    cleaning and transformation, numerical simulation, statistical modeling,
-    data visualization, machine learning, and much more.
+    <h4>About the Service</h4>
+    <p>DataHub is a distribution of open-source JupyterHub service that provides interactive computing environments to educators and students across campus using open source tools in the Jupyter ecosystem and beyond. The project has allowed Berkeley's data science program to deploy scalable Jupyter infrastructure utilizing cloud computing resources. In addition, it enables users to interact remotely with a standardized and common computing environment through any web browser. Compared to local environments that run Jupyter, a cloud-based JupyterHub provides many conveniences, including pre-installed software, quicker access to course content, and computing flexibility that enables even users on Chromebooks or iPads to run Jupyter notebook.</p>
+    <p><a href="https://jupyter.org/hub">JupyterHub</a>: Provides a multi-user infrastructure to manage computational resources without maintenance burdens.</p>
   </div>
 
   <div>
-    <h4>What is JupyterHub?</h4>
-    <a href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a> brings the
-    power of notebooks to groups of users. It gives users access to
-    computational environments and resources without burdening the users with
-    installation and maintenance tasks. Users - including students, researchers,
-    and data scientists - can get their work done in their own workspaces on
-    shared resources which can be managed efficiently by system administrators.
+    <h4>Getting Started</h4>
   </div>
 
   <div>
     <h4>Who can use this service?</h4>
+    <p>Instructors and students affiliated with UC Berkeley can use this service.</p>
+  </div>
 
-    This JupyterHub service is open to UCB instructors and students; as this is
-    a proof-of-concept service, students should ensure they are backing up their
-    notebooks regularly if they are using this service for course activities.
+  <div>
+    <h4>What is the service availability?</h4>
+    <p>Service will be available 24/7 except for the maintenance windows scheduled at the end of the fall and spring semesters.</p>
+  </div>
+
+  <div>
+    <h4>What are the applications that can be launched in this service?</h4>
+    <ul>
+      <li><a href="https://jupyter.org">Jupyter Notebook</a>: An open-source web application for creating documents with live code, visualizations, and text.</li>
+      <li><a href="https://jupyter.org">JupyterLab</a>: A flexible, web-based IDE for data science and machine learning.</li>
+      <li><a href="https://rstudio.com">RStudio</a>: An integrated environment specifically designed for statistical computing and graphics using R.</li>
+      <li><a href="https://code.visualstudio.com/docs/remote/vscode-server">Code Server</a>: Open source version of VS Code running on a remote server, accessible entirely through a web browser.</li>
+      <li><a href="https://shiny.posit.co/">Shiny</a>: It is a platform that makes it easy to build interactive web apps and dashboards.</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>For Instructors</h4>
   </div>
 
   <div>
     <h4>How do I distribute course content to students?</h4>
-    We recommend using
-    <a href="https://jupyterhub.github.io/nbgitpuller/">nbgitpuller</a>
-    to distribute content to students. You can construct a
-    <a href="https://jupyterhub.github.io/nbgitpuller/link">nbgitpuller
-    link</a>, and send it to your students. When they click it, the course content
-    will be pulled into their home directories, and the appropriate file will be
-    opened.
-  </div>
-
-  <div>
-    <h4>Can I run RStudio?</h4>
-    Yes you can! R is supported on <a href="https://r.datahub.berkeley.edu">r.datahub.berkeley.edu</a>. It is installed and enabled by default. You can also run
-    <a href="https://github.com/jupyterlab/jupyterlab/">JupyterLab</a>, or even a
-    <a href="https://github.com/yuvipanda/jupyter-desktop-server/">Linux Desktop on your browser.</a>
+    <p>Distribute course content easily using the <a href="https://nbgitpuller.readthedocs.io/en/latest/link.html">nbgitpuller</a> tool. You can construct a nbgitpuller link either using the web tool or using the <a href="https://chromewebstore.google.com/detail/datahub-link-generator/ijbgangngghdanhcnaliiobbiffocahf?hl=en">Chrome extension</a>, and send it to your students. When they click it, the course content will be pulled into their home directories, and the appropriate file will be opened.</p>
   </div>
 
   <div>
     <h4>What packages &amp; libraries are available?</h4>
-    This JupyterHub comes with Python 3.8 and R 4.0 installed. Many commonly
-    used packages are pre-installed. This
-    <code
-      ><a
-        href="https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/requirements.txt"
-        >requirements.txt</a
-      ></code
-    >
-    file lists the python packages installed, while this
-    <code
-      ><a
-        href="https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/install.R"
-      >
-        install.R</a
-      ></code
-    >
-    file lists the R packages installed.
-  </div>
-
-  <div>
-    <h4>Can I install my own packages?</h4>
-    Yes, you can! In a Jupyter Notebook, you can use
-    <code>!pip install package-name</code> or
-    <code>!conda install package-name</code> to install a Python package. With
-    R, you can use <code>install.packages()</code>. To prevent individual user
-    environments diverging from each other too much, your user installed
-    packages <strong>only last the length of your server</strong>. So we
-    recommend putting those package installation lines in the beginning of the
-    notebook / file that you are using, so it can be run each time as necessary.
+    <p>You can check the <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/environment.yml">environment.yml</a> for Python packages and the <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/install.R">install.R</a> file for R packages in the user image.</p>
   </div>
 
   <div>
     <h4>Can a package be installed for all my students?</h4>
-
-    Most likely! Please open a
-    <a href="https://github.com/berkeley-dsep-infra/datahub/issues"
-      >GitHub Issue</a
-    >
-    with your request. Even better, make a pull request with changes to the
-    <code
-      ><a
-        href="https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/requirements.txt"
-        >requirements.txt</a
-      ></code
-    >
-    file (for Python packages) and
-    <code
-      ><a
-        href="https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/install.R"
-        >install.R</a
-      ></code
-    >
-    file for R packages.
+    <p>Most likely! Please open a <a href="https://github.com/berkeley-dsep-infra/datahub/issues/new/choose">GitHub Issue</a> with your request. Even better, make a pull request with changes to the <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/environment.yml">environment.yml</a> file (for Python packages) and <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/install.R">install.R</a> file for R packages.</p>
   </div>
 
   <div>
-    <h4>I have many other questions!</h4>
-    Awesome! Please
-    <a href="https://github.com/berkeley-dsep-infra/datahub/issues"
-      >open an issues</a
-    >
-    and we will help answer them!
+    <h4>Can I install my own packages?</h4>
+    <p>Yes, you can! In a Jupyter Notebook, you can use <code>!pip install package-name</code> or <code>!conda install package-name</code> to install a Python package. With R, you can use <code>install.packages()</code>. To prevent individual user environments diverging from each other too much, your user installed packages <strong>only last the length of your server</strong>. So we recommend putting those package installation lines in the beginning of the notebook / file that you are using, so it can be run each time as necessary.</p>
+  </div>
+
+  <div>
+    <h4>Need Help?</h4>
+    <ul>
+      <li><strong>GitHub Issues</strong>: Request help or report bugs using <a href="https://github.com/berkeley-dsep-infra/datahub/issues/new/choose">GitHub templates</a>.</li>
+      <li><strong>DataHub Support</strong>: For time-sensitive requests that aren't covered by GitHub templates, reach out via email to <a href="mailto:datahub-support@berkeley.edu">datahub-support@berkeley.edu</a>.</li>
+      <li><strong>Documentation</strong>: Review the <a href="https://docs.datahub.berkeley.edu/">support documentation</a> for additional information about the service. You can get additional information about the service from the <a href="https://cdss.berkeley.edu/datahub-home-page">CDSS</a> and <a href="https://rtl.berkeley.edu/services-programs/datahub">RTL</a> webpages.</li>
+    </ul>
   </div>
 
   <div class="footer">
