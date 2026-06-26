@@ -120,12 +120,49 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
 
   <div>
     <h4>What packages &amp; libraries are available?</h4>
-    <p>You can check the <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/environment.yml">environment.yml</a> for Python packages and the <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/install.R">install.R</a> file for R packages in the user image.</p>
+    <p>To see what packages are pre-installed, click on the environment type you are using:</p>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Base Environment</th>
+          <th>Hub-Specific Environment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Python Packages</strong></td>
+          <td><a href="https://github.com/berkeley-dsep-infra/base-python-image">Base Python Environment</a> (Shared across multiple hubs)</td>
+          <td><a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/environment.yml">Hub specific Python environment</a> (Specific to this hub)</td>
+        </tr>
+        <tr>
+          <td><strong>R Packages</strong></td>
+          <td><a href="https://github.com/berkeley-dsep-infra/base-r-image/blob/main/install.R">Base R Environment</a> (Common across multiple hubs)</td>
+          <td><a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/install.R">Hub specific R environment</a> (Specific to this hub)</td>
+        </tr>
+        <tr>
+          <td><strong>System Packages (Linux/Apt)</strong></td>
+          <td><a href="https://github.com/berkeley-dsep-infra/base-python-image/blob/main/apt.txt">Base system packages in apt.txt</a> (Common across all hubs)</td>
+          <td><a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/apt.txt">Hub specific system packages</a> (Specific to this hub)</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div>
     <h4>Can a package be installed for all my students?</h4>
-    <p>Most likely! Please open a <a href="https://github.com/berkeley-dsep-infra/datahub/issues/new?template=package_request.yml">GitHub Issue</a> with your request. Even better, make a pull request with changes to the <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/environment.yml">environment.yml</a> file (for Python packages) and <a href="https://github.com/berkeley-dsep-infra/datahub-user-image-03-26/blob/main/install.R">install.R</a> file for R packages.</p>
+    <p>If a package you need is missing from the environment, you can request it in one of two ways:</p>
+    <ul>
+      <li><strong>Standard Request:</strong> Open a <a href="https://github.com/berkeley-dsep-infra/datahub/issues/new?template=package_request.yml">GitHub Issue</a> with your request.</li>
+      <li><strong>Self-Service:</strong> Create a Pull Request (PR) with changes to the respective image by following the steps outlined in the <a href="https://docs.datahub.berkeley.edu/tasks/user-images/update-image.html">image update documentation</a>.</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Shared Conda Environments</h4>
+    <p>Want to install custom software without waiting for standard deployments or submitting GitHub PRs? <strong>Shared Conda Environments</strong> allow instructors and TAs to install custom packages and register new Jupyter kernels directly for their courses.</p>
+    <p>If you are interested in setting this up for your course, please submit a <a href="https://github.com/berkeley-dsep-infra/datahub/issues/new?template=featurerequest.md">support request</a>.</p>
   </div>
 
   <div>
