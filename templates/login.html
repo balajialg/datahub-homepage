@@ -89,13 +89,23 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
   </div>
 
   <div>
+    <h4>What should I know about my content in DataHub?</h4>
+    <ol>
+      <li>Home directories are not intended for long-term storage. You are responsible for backing up your files regularly.</li>
+      <li>Data stored in home directories may be archived at the end of each semester for users who have been inactive for more than 30 days.</li>
+      <li>Home directories exceeding 50 GB may be deleted at the end of the semester after advance notification by email.</li>
+    </ol>
+  </div>
+
+  <div>
     <h4>Who can use this service?</h4>
     <p>Instructors and students affiliated with UC Berkeley can use this service.</p>
   </div>
 
   <div>
     <h4>What is the service availability?</h4>
-    <p>Service will be available 24/7 except for the maintenance windows scheduled at the end of the fall and spring semesters.</p>
+    <p>Service will be available 24/7 except for the scheduled maintenance that gets performed during 1&ndash;2 week maintenance periods at the end of the fall and spring semesters.</p>
+    <p>Some maintenance tasks require temporary downtime, and any planned service interruptions will be announced in advance.</p>
   </div>
 
   <div>
@@ -111,6 +121,13 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
 
   <div>
     <h4>For Instructors</h4>
+  </div>
+
+  <div>
+    <h4>How should I plan for lectures, labs or assignment deadlines?</h4>
+    <p>For courses where many students are expected to start their servers simultaneously (for example, during lectures, labs, or assignment deadlines), instructors can request temporary warm-up (placeholder) nodes to accommodate the increased demand.</p>
+    <p>We make every effort to keep warm-up nodes available and minimize server startup times during weekday daytime hours. Outside of these hours, startup times may be longer, as additional compute nodes may need to be provisioned and initialized, and container images may need to be pulled.</p>
+    <p>If your server has not started within 10 minutes, stop it (if applicable) and try starting it again.</p>
   </div>
 
   <div>
