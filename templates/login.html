@@ -32,7 +32,7 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
     <div class="form-group interface-selector">
       <label>After logging in, open: </label>
       <label class="radio-inline">
-        <input type="radio"3name="interface" value="tree" checked />Jupyter
+        <input type="radio" name="interface" value="tree" checked />Jupyter
         Notebook
       </label>
       <!-- <label class="radio-inline">
@@ -184,7 +184,7 @@ data-authenticator-login-url="{{authenticator_login_url}}"">
 
   <div>
     <h4>Can I install my own packages?</h4>
-    <p>Yes, you can but it is generally encouraged to reach out to the admins if you plan to install a package! In a Jupyter Notebook, you can use <code>!pip install package-name</code> or <code>!conda install package-name</code> to install a Python package. With R, you can use <code>install.packages()</code>. To prevent individual user environments diverging from each other too much, your user installed packages <strong>only last the length of your server</strong>. So we recommend putting those package installation lines in the beginning of the notebook / file that you are using, so it can be run each time as necessary.</p>
+    <p>Yes, you can, but we strongly encourage reaching out to the admins for package installations rather than doing it yourself, as manual updates are highly error-prone! In a Jupyter Notebook, you can use <code>!pip install package-name</code> or <code>!conda install package-name</code> to install a Python package. With R, you can use <code>install.packages()</code>. To prevent individual user environments diverging from each other too much, your user installed packages <strong>only last the length of your server</strong>. So we recommend putting those package installation lines in the beginning of the notebook / file that you are using, so it can be run each time as necessary.</p>
   </div>
 
   <div>
